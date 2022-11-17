@@ -1,0 +1,53 @@
+@import "./resets";
+@import "./variables";
+@import "./mixins";
+@import "./functions";
+@import "./container";
+
+.header {
+    background-color: $primary-color;
+    position: fixed;
+    width: 100%;
+    #{&}_container {
+        @include flex-between-center;
+        padding: 1.2rem .3rem;
+        position: relative;
+        p.brandname > a {
+            font-size: 1.8rem;
+            font-weight: weight(bold);
+            color: $secondary-color;
+            text-decoration: none;
+        }
+
+        ul.nav_area {
+            @include flex-start-center;
+
+            .nav_link {
+                list-style: none;
+                
+
+                a {
+                    color: $secondary-color;
+                    text-decoration: none;
+                    padding: .6rem 0rem .6rem 2rem;
+                }
+            }
+
+            @include small-screen {
+                display: none;
+            }
+        }
+    }
+}
+
+.main {
+    .hero_section {
+        width: 100%;
+        height: 100vh;
+        background-color: $primary-color;
+
+        .hero_container {
+
+        }
+    }
+}

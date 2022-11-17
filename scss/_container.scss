@@ -1,0 +1,36 @@
+.container {
+    width: 1320px;
+    margin: auto;
+}
+@media screen and (max-width: map-get($media-break-points, xx-large)) {
+    .container {
+        width: 1140px;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: map-get($media-break-points, x-large)) {
+    .container {
+        width: 960px;
+        margin: auto;
+    }
+}
+@media screen and (max-width: map-get($media-break-points, large)) {
+    .container {
+        width: 720px;
+        margin: auto;
+    }
+}
+@media screen and (max-width: map-get($media-break-points, medium)) {
+    .container {
+        width: 540px;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: map-get($media-break-points, small)) {
+    .container {
+        width: 100%;
+        margin: auto;
+    }
+}

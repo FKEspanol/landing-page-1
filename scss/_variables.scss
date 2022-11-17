@@ -1,0 +1,21 @@
+$primary-color: #161616;
+$secondary-color: #ffffff;
+$success-color: #40a262;
+$info-color: #1a84b0;
+$warning-color: #f2b969;
+$danger-color: #b84743;
+
+
+$font-weights: (
+    "regular": 400,
+    "medium": 500,
+    "bold": 700
+);
+
+$media-break-points: (
+    "small": 575.20px,
+    "medium": 767.20px,
+    "large": 991.20px,
+    "x-large": 1199.20px,
+    "xx-large": 1399.20px
+);
