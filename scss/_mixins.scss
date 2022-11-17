@@ -7,6 +7,15 @@
     align-items: center;
 }
 
+@mixin flex-align-center {
+    display: flex;
+    align-items: center;
+}
+@mixin flex-content-center {
+    display: flex;
+    justify-content: center;
+}
+
 @mixin flex-between-center {
     display: flex;
     justify-content: space-between;
@@ -23,6 +32,12 @@
 
 @mixin small-screen {
     @media (max-width: map-get($media-break-points, medium)) {
+        @content;
+    }
+}
+
+@mixin medium-screen {
+    @media (max-width: map-get($media-break-points, large)) {
         @content;
     }
 }

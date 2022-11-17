@@ -41,7 +41,7 @@
   }
 }
 .header {
-  background-color: #161616;
+  background-color: transparent;
   position: fixed;
   width: 100%;
 }
@@ -49,7 +49,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.2rem 0.3rem;
+  padding: 1.5rem 0.75rem;
   position: relative;
 }
 .header .header_container p.brandname > a {
@@ -80,5 +80,64 @@
 .main .hero_section {
   width: 100%;
   height: 100vh;
-  background-color: #161616;
+  background: linear-gradient(to right, rgba(39, 70, 133, 0.8) 0%, rgba(61, 179, 197, 0.8) 100%), url(/dist/assets/hero-bg.jpg) no-repeat center;
+  background-size: cover;
+  background-position: center center;
+  background-size: cover;
+}
+.main .hero_section .hero_container {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 0 0.75rem;
+}
+.main .hero_section .hero_container .hero_text_image {
+  display: flex;
+}
+.main .hero_section .hero_container .hero_text_image .hero_text_area {
+  width: 60%;
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+.main .hero_section .hero_container .hero_text_image .hero_text_area .text_area_container h1.hero_header {
+  font-size: 3.5rem;
+  margin-bottom: 1.9rem;
+}
+.main .hero_section .hero_container .hero_text_image .hero_text_area .text_area_container p {
+  font-size: 1.2rem;
+  margin-bottom: 3rem;
+}
+.main .hero_section .hero_container .hero_text_image .hero_text_area .text_area_container button {
+  border: 2px #fff solid;
+  border-radius: 2rem;
+  font-size: 1rem;
+  background-color: transparent;
+  color: #fff;
+  padding: 1rem 1.8rem;
+  margin-bottom: 1rem;
+  transition: 200ms ease-in-out;
+  cursor: pointer;
+}
+.main .hero_section .hero_container .hero_text_image .hero_text_area .text_area_container button:hover {
+  background-color: #fff;
+  color: #274180;
+}
+.main .hero_section .hero_container .hero_text_image .hero_image_area {
+  width: 40%;
+  margin: auto;
+}
+@media (max-width: 991.2px) {
+  .main .hero_section .hero_container .hero_text_image {
+    flex-direction: column;
+  }
+  .main .hero_section .hero_container .hero_text_image .hero_text_area {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+  }
+  .main .hero_section .hero_container .hero_text_image .hero_text_area .text_area_container h1.hero_header {
+    font-size: 2.5rem;
+  }
 }/*# sourceMappingURL=style.css.map */
