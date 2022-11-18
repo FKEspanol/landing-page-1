@@ -145,16 +145,18 @@
         .block1 {
           display: flex;
           justify-content: space-evenly;
-          margin-top: 1rem;  
+          margin-bottom: 2rem;
           .col-left {
             width: 55%;
-            position: relative;
+            display: flex;
+            align-items: flex-end;
+            padding: 1rem;
             img {  
               width: 100%;
               height: auto;
-              position: absolute;
-              bottom: 0;
-              padding: 1rem;
+            //   position: absolute;
+            //   bottom: 0;
+              
             }
           }
 
@@ -229,6 +231,8 @@
                 margin: 2rem 0;
             }
             .col-right-img {
+                display: flex;
+                align-items:flex-end;
               img {
                 width: 100%;
                 height: auto;
@@ -242,11 +246,56 @@
             .col-left, .col-right {
                 width: 100%;
             }
-
-            .col-left > img {
-                position: inherit;
-            }
           }
+        }
+
+        .block2 {
+            margin-bottom: 2rem;
+            @include flex-evenly;
+            .col-left {
+                width: 55%;
+                padding: 1rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+                h3 {
+                    font-size: 1.6rem;
+                    margin-bottom: 20px;
+                    color: $primary-color;
+                }
+
+                p {
+                    font-size: .95rem;
+                    color: $info-color;
+                    line-height: 1.7;
+                    margin-bottom: 20px;
+                }
+
+                button {
+                    width: fit-content;
+                    padding: 1rem 2rem;
+                    background: linear-gradient(to right, #274180, #416fdb);
+                    border: none;
+                    color: #fff;
+                    border-radius: 2rem;
+                }
+            }
+            .col-right {
+                width: 40%;
+                padding: 1rem;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            @include medium-screen {
+                display: block;
+                .col-left, .col-right {
+                    width: 100%;
+                }
+              }
         }
       }
     }
