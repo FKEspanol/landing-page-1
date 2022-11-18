@@ -5,144 +5,250 @@
 @import "./container";
 
 .header {
-    background-color: transparent;
-    position: fixed;
-    width: 100%;
-    #{&}_container {
-        @include flex-between-center;
-        padding: 1.5rem .75rem;
-        position: relative;
-        p.brandname > a {
-            font-size: 1.8rem;
-            font-weight: weight(bold);
-            color: $secondary-color;
-            text-decoration: none;
-        }
-
-        ul.nav_area {
-            @include flex-start-center;
-
-            .nav_link {
-                list-style: none;
-                
-
-                a {
-                    color: $secondary-color;
-                    text-decoration: none;
-                    padding: .6rem 0rem .6rem 2rem;
-                }
-            }
-
-            @include small-screen {
-                display: none;
-            }
-        }
+  background-color: transparent;
+  position: absolute;
+  width: 100%;
+  #{&}_container {
+    @include flex-between-center;
+    padding: 1.5rem 0.75rem;
+    position: relative;
+    p.brandname > a {
+      font-size: 1.8rem;
+      font-weight: weight(bold);
+      color: #fff;
+      text-decoration: none;
     }
+
+    ul.nav_area {
+      @include flex-start-center;
+
+      .nav_link {
+        list-style: none;
+
+        a {
+          color: #fff;
+          text-decoration: none;
+          padding: 0.6rem 0rem 0.6rem 2rem;
+        }
+      }
+
+      @include small-screen {
+        display: none;
+      }
+    }
+  }
 }
 
 .main {
-    .hero_section {
-        width: 100%;
-        height: 100vh;
-        background: linear-gradient(to right, rgba(39, 70, 133, 0.8) 0%, rgba(61, 179, 197, 0.8) 100%), url(/dist/assets/hero-bg.jpg) no-repeat center;
-        background-size: cover;
-        background-position: center center;
-        background-size: cover;
+  .hero_section {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(
+        to right,
+        rgba(39, 70, 133, 0.8) 0%,
+        rgba(61, 179, 197, 0.8) 100%
+      ),
+      url(/dist/assets/hero-bg.jpg) no-repeat center;
+    background-size: cover;
+    background-position: center center;
+    background-size: cover;
 
-        .hero_container {
-            @include flex-align-center;
-            height: 100%;
-            padding: 0 .75rem;
-            .hero_text_image {
-                display: flex;
+    .hero_container {
+      @include flex-align-center;
+      height: 100%;
+      padding: 0 0.75rem;
+      .hero_text_image {
+        display: flex;
 
-                .hero_text_area {
-                    width: 60%;
-                    color: #fff;
-                    @include flex-align-center;
-                    .text_area_container {
-                        h1.hero_header {
-                            font-size: 3.5rem;
-                            margin-bottom: 1.9rem;
-                        }
-    
-                        p {
-                            font-size: 1.2rem;
-                            margin-bottom: 3rem;
-                        }
-
-                        button {
-                            border: 2px #fff solid;
-                            border-radius: 2rem;
-                            font-size: 1rem;
-                            background-color: transparent;
-                            color: #fff;
-                            padding: 1rem 2rem;
-                            margin-bottom: 1rem;
-                            transition: 200ms ease-in-out;
-                            cursor: pointer;
-
-                            &:hover {
-                                background-color: #fff;
-                                color: $primary-color;
-                            }
-                        }
-                    }
-                }
-
-                .hero_image_area {
-                    width: 40%;
-                    margin: auto;
-
-                    img {
-                        width: 100%;
-                    }
-                }
-
-                @include medium-screen {
-                    flex-direction: column;
-
-                    .hero_text_area {
-                        @include flex-content-center;
-                        width: 100%;
-                        // margin-top: 3.5rem;
-                        text-align: center;
-
-                        .text_area_container {
-
-                            h1.hero_header {
-                                font-size: 2.5rem;
-                            }
-                        }
-                    }
-
-                }
+        .hero_text_area {
+          width: 60%;
+          color: #fff;
+          @include flex-align-center;
+          .text_area_container {
+            h1.hero_header {
+              font-size: 3.5rem;
+              margin-bottom: 1.9rem;
             }
+
+            p {
+              font-size: 1.2rem;
+              margin-bottom: 3rem;
+            }
+
+            button {
+              border: 2px #fff solid;
+              border-radius: 2rem;
+              font-size: 1rem;
+              background-color: transparent;
+              color: #fff;
+              padding: 1rem 2rem;
+              margin-bottom: 1rem;
+              transition: 200ms ease-in-out;
+              cursor: pointer;
+
+              &:hover {
+                background-color: #fff;
+                color: $primary-color;
+              }
+            }
+          }
         }
+
+        .hero_image_area {
+          width: 40%;
+          margin: auto;
+
+          img {
+            width: 100%;
+          }
+        }
+
+        @include medium-screen {
+          flex-direction: column;
+
+          .hero_text_area {
+            @include flex-content-center;
+            width: 100%;
+            // margin-top: 3.5rem;
+            text-align: center;
+
+            .text_area_container {
+              h1.hero_header {
+                font-size: 2.5rem;
+              }
+            }
+          }
+        }
+      }
     }
+  }
 
-    .about_section {
-        padding: 80px 0px;
-        .about_container {
+  .about_section {
+    padding: 80px 0px;
+    .about_container {
+      .section_header {
+        text-align: center;
+        line-height: 1.8;
+        margin-bottom: 2rem;
 
-            .section_header {
-                text-align: center;
-                line-height: 1.8;
+        p {
+          color: $info-color;
+        }
 
-                p {
-                    color: $info-color;
-                }
+        h2 {
+          color: $primary-color;
+          font-size: 2rem;
+        }
+      }
 
-                h2 {
-                    color: $primary-color;
-                    font-size: 2rem;
-                }
+      .about_content {
+        .block1 {
+          display: flex;
+          justify-content: space-evenly;
+          margin-top: 1rem;  
+          .col-left {
+            width: 55%;
+            position: relative;
+            img {  
+              width: 100%;
+              height: auto;
+              position: absolute;
+              bottom: 0;
+              padding: 1rem;
+            }
+          }
+
+          .col-right {
+            width: 40%;
+            padding: 1rem;
+
+            p.empha-para {
+                line-height: 1.2;
             }
 
-            .about_content {
-                display: flex;
+            p.empha-para::before{
+                content: open-quote;
+                color: $primary-color;
+                font-size: 2em;
+                position: relative;
+                top: .25em;
+                margin-right: .2em;
                 
             }
+
+            p.empha-para::after{
+                content: close-quote;
+                color: $primary-color;
+                font-size: 2em;
+                position: relative;
+                bottom: -.25em;
+                margin-left: .2em;
+            }
+
+            p {
+              line-height: 1.5;
+              color: $info-color;
+            }
+
+            ul {
+              line-height: 1.4;
+              li {
+                @include flex-align-center;
+                padding-bottom: 0.6rem;
+                list-style: none;
+                font-size: .95rem;
+                p.list-para {
+                    margin-bottom: 0;
+                    text-align: start;
+                }
+
+                span.list-style::before {
+                    content: '';
+                    display: inline-block;
+                    background-color: $primary-color;
+                    width: 10px;
+                    height: 10px;
+                    border-radius: 50%;
+                    margin-right: 1rem;
+                }
+
+              }
+            }
+
+            p,
+            ul {
+              margin-bottom: 1rem;
+            }
+
+            p.underlined-para::after {
+                content: '';
+                display: block;
+                width: 100%;
+                height: 1.5px;
+                background-color: $primary-color;
+                margin: 2rem 0;
+            }
+            .col-right-img {
+              img {
+                width: 100%;
+                height: auto;
+                
+              }
+            }
+          }
+
+          @include medium-screen {
+            display: block;
+            .col-left, .col-right {
+                width: 100%;
+            }
+
+            .col-left > img {
+                position: inherit;
+            }
+          }
         }
+      }
     }
+  }
 }
