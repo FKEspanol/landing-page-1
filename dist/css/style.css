@@ -114,7 +114,7 @@
   font-size: 1rem;
   background-color: transparent;
   color: #fff;
-  padding: 1rem 1.8rem;
+  padding: 1rem 2rem;
   margin-bottom: 1rem;
   transition: 200ms ease-in-out;
   cursor: pointer;
@@ -126,6 +126,9 @@
 .main .hero_section .hero_container .hero_text_image .hero_image_area {
   width: 40%;
   margin: auto;
+}
+.main .hero_section .hero_container .hero_text_image .hero_image_area img {
+  width: 100%;
 }
 @media (max-width: 991.2px) {
   .main .hero_section .hero_container .hero_text_image {
@@ -140,4 +143,21 @@
   .main .hero_section .hero_container .hero_text_image .hero_text_area .text_area_container h1.hero_header {
     font-size: 2.5rem;
   }
+}
+.main .about_section {
+  padding: 80px 0px;
+}
+.main .about_section .about_container .section_header {
+  text-align: center;
+  line-height: 1.8;
+}
+.main .about_section .about_container .section_header p {
+  color: #525252;
+}
+.main .about_section .about_container .section_header h2 {
+  color: #274180;
+  font-size: 2rem;
+}
+.main .about_section .about_container .about_content {
+  display: flex;
 }/*# sourceMappingURL=style.css.map */

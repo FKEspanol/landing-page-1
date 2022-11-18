@@ -77,7 +77,7 @@
                             font-size: 1rem;
                             background-color: transparent;
                             color: #fff;
-                            padding: 1rem 1.8rem;
+                            padding: 1rem 2rem;
                             margin-bottom: 1rem;
                             transition: 200ms ease-in-out;
                             cursor: pointer;
@@ -93,6 +93,10 @@
                 .hero_image_area {
                     width: 40%;
                     margin: auto;
+
+                    img {
+                        width: 100%;
+                    }
                 }
 
                 @include medium-screen {
@@ -113,6 +117,31 @@
                     }
 
                 }
+            }
+        }
+    }
+
+    .about_section {
+        padding: 80px 0px;
+        .about_container {
+
+            .section_header {
+                text-align: center;
+                line-height: 1.8;
+
+                p {
+                    color: $info-color;
+                }
+
+                h2 {
+                    color: $primary-color;
+                    font-size: 2rem;
+                }
+            }
+
+            .about_content {
+                display: flex;
+                
             }
         }
     }
