@@ -1,0 +1,34 @@
+.header {
+    background-color: transparent;
+    position: absolute;
+    width: 100%;
+    #{&}_container {
+      @include flex-between-center;
+      padding: 1.5rem 0.75rem;
+      position: relative;
+      p.brandname > a {
+        font-size: 1.8rem;
+        font-weight: weight(bold);
+        color: #fff;
+        text-decoration: none;
+      }
+  
+      ul.nav_area {
+        @include flex-start-center;
+  
+        .nav_link {
+          list-style: none;
+  
+          a {
+            color: #fff;
+            text-decoration: none;
+            padding: 0.6rem 0rem 0.6rem 2rem;
+          }
+        }
+  
+        @include small-screen {
+          display: none;
+        }
+      }
+    }
+  }
