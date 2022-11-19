@@ -2,7 +2,7 @@
 // @import "./mixins";
 // @import "./functions";
 
-@use "./globals";
-@use "./header";
-@use "./hero";
-@use "./about";
+@use "./layout/layout_index";
+@use "./base/base_index";
+@use "./components/comp_index";
+@use "./sections/sections_index";

@@ -1,13 +1,4 @@
-@use "./index" as *;
-
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  font-family: sans-serif;
-}
-
-// container
+@use "../abstracts/abstr_index" as *;
 
 .container {
   width: 1320px;
@@ -44,8 +35,4 @@
     width: 100%;
     margin: auto;
   }
-}
-
-button {
-  cursor: pointer;
 }
