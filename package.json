@@ -24,7 +24,7 @@
     "readdirp": "^3.6.0"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "sass": "sass scss:dist/css"
   },
   "repository": {
     "type": "git",
