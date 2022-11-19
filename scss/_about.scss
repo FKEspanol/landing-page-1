@@ -1,125 +1,127 @@
+@use "./index" as *;
+
 .about_section {
-    padding: 60px 0px 0px 0px;
-    .about_container {
-      .section_header {
-        text-align: center;
-        line-height: 1.8;
-        margin-bottom: 2rem;
+  padding: 60px 0px 0px 0px;
+  .about_container {
+    .section_header {
+      text-align: center;
+      line-height: 1.8;
+      margin-bottom: 2rem;
 
-        p {
-          color: $info-color;
-        }
-
-        h2 {
-          color: $primary-color;
-          font-size: 2rem;
-        }
+      p {
+        color: $info-color;
       }
 
-      .about_content {
-        .block1 {
+      h2 {
+        color: $primary-color;
+        font-size: 2rem;
+      }
+    }
+
+    .about_content {
+      .block1 {
+        display: flex;
+        justify-content: space-evenly;
+        margin-bottom: 2rem;
+        .col-left {
+          width: 55%;
           display: flex;
-          justify-content: space-evenly;
-          margin-bottom: 2rem;
-          .col-left {
-            width: 55%;
+          align-items: flex-end;
+          padding: 1rem;
+          img {
+            width: 100%;
+            height: auto;
+            //   position: absolute;
+            //   bottom: 0;
+          }
+        }
+
+        .col-right {
+          width: 40%;
+          padding: 1rem;
+
+          p.empha-para {
+            line-height: 1.2;
+          }
+
+          p.empha-para::before {
+            content: open-quote;
+            color: $primary-color;
+            font-size: 2em;
+            position: relative;
+            top: 0.25em;
+            margin-right: 0.2em;
+          }
+
+          p.empha-para::after {
+            content: close-quote;
+            color: $primary-color;
+            font-size: 2em;
+            position: relative;
+            bottom: -0.25em;
+            margin-left: 0.2em;
+          }
+
+          p {
+            line-height: 1.5;
+            color: $info-color;
+          }
+
+          ul {
+            line-height: 1.4;
+            li {
+              @include flex-align-center;
+              padding-bottom: 0.6rem;
+              list-style: none;
+              font-size: 0.95rem;
+              p.list-para {
+                margin-bottom: 0;
+                text-align: start;
+              }
+
+              span.list-style::before {
+                content: "";
+                display: inline-block;
+                background-color: $primary-color;
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                margin-right: 1rem;
+              }
+            }
+          }
+
+          p,
+          ul {
+            margin-bottom: 1rem;
+          }
+
+          p.underlined-para::after {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 1.5px;
+            background-color: $primary-color;
+            margin: 2rem 0;
+          }
+          .col-right-img {
             display: flex;
             align-items: flex-end;
-            padding: 1rem;
             img {
               width: 100%;
               height: auto;
-              //   position: absolute;
-              //   bottom: 0;
             }
           }
+        }
 
+        @include medium-screen {
+          display: block;
+          .col-left,
           .col-right {
-            width: 40%;
-            padding: 1rem;
-
-            p.empha-para {
-              line-height: 1.2;
-            }
-
-            p.empha-para::before {
-              content: open-quote;
-              color: $primary-color;
-              font-size: 2em;
-              position: relative;
-              top: 0.25em;
-              margin-right: 0.2em;
-            }
-
-            p.empha-para::after {
-              content: close-quote;
-              color: $primary-color;
-              font-size: 2em;
-              position: relative;
-              bottom: -0.25em;
-              margin-left: 0.2em;
-            }
-
-            p {
-              line-height: 1.5;
-              color: $info-color;
-            }
-
-            ul {
-              line-height: 1.4;
-              li {
-                @include flex-align-center;
-                padding-bottom: 0.6rem;
-                list-style: none;
-                font-size: 0.95rem;
-                p.list-para {
-                  margin-bottom: 0;
-                  text-align: start;
-                }
-
-                span.list-style::before {
-                  content: "";
-                  display: inline-block;
-                  background-color: $primary-color;
-                  width: 10px;
-                  height: 10px;
-                  border-radius: 50%;
-                  margin-right: 1rem;
-                }
-              }
-            }
-
-            p,
-            ul {
-              margin-bottom: 1rem;
-            }
-
-            p.underlined-para::after {
-              content: "";
-              display: block;
-              width: 100%;
-              height: 1.5px;
-              background-color: $primary-color;
-              margin: 2rem 0;
-            }
-            .col-right-img {
-              display: flex;
-              align-items: flex-end;
-              img {
-                width: 100%;
-                height: auto;
-              }
-            }
-          }
-
-          @include medium-screen {
-            display: block;
-            .col-left,
-            .col-right {
-              width: 100%;
-            }
+            width: 100%;
           }
         }
       }
     }
   }
+}

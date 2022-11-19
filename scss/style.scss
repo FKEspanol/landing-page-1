@@ -1,12 +1,8 @@
-@import "./variables";
-@import "./mixins";
-@import "./functions";
+// @import "./variables";
+// @import "./mixins";
+// @import "./functions";
 
-@import "./globals";
-@import "./header";
-@import "./hero";
-@import "./about";
-
-
-
-
+@use "./globals";
+@use "./header";
+@use "./hero";
+@use "./about";
