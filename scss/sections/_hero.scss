@@ -1,5 +1,5 @@
 @use "../abstracts/abstr_index" as *;
-.hero_section {
+.hero-section {
   width: 100%;
   height: 100vh;
   background: linear-gradient(
@@ -12,19 +12,19 @@
   background-position: center center;
   background-size: cover;
 
-  .hero_container {
+  .hero-container {
     @include flex-align-center;
     height: 100%;
     padding: 0 0.75rem;
-    .hero_text_image {
+    .hero-text-image {
       display: flex;
 
-      .hero_text_area {
+      .hero-text-area {
         width: 60%;
         color: #fff;
         @include flex-align-center;
-        .text_area_container {
-          h1.hero_header {
+        .text-area-container {
+          h1.hero-header {
             font-size: 3.5rem;
             margin-bottom: 1.9rem;
           }
@@ -53,7 +53,7 @@
         }
       }
 
-      .hero_image_area {
+      .hero-image-area {
         width: 40%;
         margin: auto;
 
@@ -65,14 +65,14 @@
       @include medium-screen {
         flex-direction: column;
 
-        .hero_text_area {
+        .hero-text-area {
           @include flex-content-center;
           width: 100%;
           // margin-top: 3.5rem;
           text-align: center;
 
-          .text_area_container {
-            h1.hero_header {
+          .text-area-container {
+            h1.hero-header {
               font-size: 2.5rem;
             }
           }
@@ -82,10 +82,10 @@
   }
 }
 
-.second_hero {
+.second-hero {
   padding: 60px 0px 0px 0px;
 
-  .second_hero_container {
+  .second-hero-container {
     @include flex-evenly;
 
     .col-left {

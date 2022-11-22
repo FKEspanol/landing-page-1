@@ -8,7 +8,7 @@
   background-color: transparent;
   position: absolute;
   width: 100%;
-  #{&}_container {
+  #{&}-container {
     @include flex-between-center;
     padding: 1.5rem 0.75rem;
     position: relative;
@@ -19,10 +19,10 @@
       text-decoration: none;
     }
 
-    ul.nav_area {
+    ul.nav-area {
       @include flex-start-center;
 
-      .nav_link {
+      .nav-link {
         list-style: none;
 
         a {
