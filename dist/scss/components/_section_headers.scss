@@ -1,0 +1,16 @@
+@use "../abstracts/abstr_index" as *;
+
+.section_header {
+  text-align: center;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+
+  p {
+    color: $info-color;
+  }
+
+  h2 {
+    color: $primary-color;
+    font-size: 2rem;
+  }
+}

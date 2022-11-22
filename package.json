@@ -24,7 +24,7 @@
     "readdirp": "^3.6.0"
   },
   "scripts": {
-    "sass": "sass scss:dist/css"
+    "sass": "sass dist/scss:dist/css"
   },
   "repository": {
     "type": "git",

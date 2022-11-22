@@ -54,6 +54,19 @@ button {
   cursor: pointer;
 }
 
+.section_header {
+  text-align: center;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+}
+.section_header p {
+  color: #525252;
+}
+.section_header h2 {
+  color: #274180;
+  font-size: 2rem;
+}
+
 .header {
   background-color: transparent;
   position: absolute;
@@ -213,18 +226,6 @@ button {
 
 .about_section {
   padding: 60px 0px 0px 0px;
-}
-.about_section .about_container .section_header {
-  text-align: center;
-  line-height: 1.8;
-  margin-bottom: 2rem;
-}
-.about_section .about_container .section_header p {
-  color: #525252;
-}
-.about_section .about_container .section_header h2 {
-  color: #274180;
-  font-size: 2rem;
 }
 .about_section .about_container .about_content .block1 {
   display: flex;
