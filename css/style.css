@@ -50,19 +50,23 @@ body {
   font-family: "Public Sans", sans-serif;
 }
 
+p {
+  font-size: 0.95rem;
+}
+
 button {
   cursor: pointer;
 }
 
-.section_header {
+.section-header {
   text-align: center;
   line-height: 1.8;
   margin-bottom: 2rem;
 }
-.section_header p {
+.section-header p {
   color: #525252;
 }
-.section_header h2 {
+.section-header h2 {
   color: #274180;
   font-size: 2rem;
 }
@@ -187,7 +191,7 @@ button {
   justify-content: center;
 }
 .second-hero .second-hero-container .col-left h3 {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   margin-bottom: 20px;
   color: #274180;
 }
@@ -320,4 +324,36 @@ button {
 .about-section .about-container .about-content .block1 .col-right {
     width: 100%;
   }
+}
+
+.services-section {
+  padding: 60px 0px 0px 0px;
+}
+.services-section .services-container .block1-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
+}
+.services-section .services-container .block1-grid .grid-col {
+  margin-top: 1rem;
+  padding: 2rem 0;
+  line-height: 1.5;
+  display: flex;
+}
+.services-section .services-container .block1-grid .grid-col i {
+  font-size: 2.5rem;
+  color: #274180;
+}
+.services-section .services-container .block1-grid .grid-col .content {
+  margin-left: 0.8rem;
+}
+.services-section .services-container .block1-grid .grid-col .content h4 {
+  margin-bottom: 0.3rem;
+  color: #343434;
+  font-size: 1.5rem;
+}
+.services-section .services-container .block1-grid .grid-col .content p {
+  font-size: 0.9rem;
+  color: #525252;
 }/*# sourceMappingURL=style.css.map */
