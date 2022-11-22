@@ -29,6 +29,7 @@
 }
 @media screen and (max-width: 575.2px) {
   .container {
+    padding: 1rem;
     width: 100%;
     margin: auto;
   }
@@ -185,10 +186,11 @@ button {
 }
 .second-hero .second-hero-container .col-left {
   width: 55%;
-  padding: 1rem;
+  padding-right: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-bottom: 1rem;
 }
 .second-hero .second-hero-container .col-left h3 {
   font-size: 1.8rem;
@@ -213,7 +215,8 @@ button {
 }
 .second-hero .second-hero-container .col-right {
   width: 40%;
-  padding: 1rem;
+  padding-left: 1rem;
+  margin-bottom: 1rem;
 }
 .second-hero .second-hero-container .col-right img {
   width: 100%;
@@ -225,6 +228,12 @@ button {
   .second-hero .second-hero-container .col-left,
 .second-hero .second-hero-container .col-right {
     width: 100%;
+  }
+}
+@media (max-width: 767.2px) {
+  .second-hero .second-hero-container .col-left,
+.second-hero .second-hero-container .col-right {
+    padding: 0;
   }
 }
 
@@ -240,7 +249,7 @@ button {
   width: 55%;
   display: flex;
   align-items: flex-end;
-  padding: 1rem;
+  padding-right: 1rem;
 }
 .about-section .about-container .about-content .block1 .col-left img {
   width: 100%;
@@ -248,7 +257,7 @@ button {
 }
 .about-section .about-container .about-content .block1 .col-right {
   width: 40%;
-  padding: 1rem;
+  padding-left: 1rem;
 }
 .about-section .about-container .about-content .block1 .col-right p.empha-para {
   line-height: 1.2;
@@ -323,6 +332,12 @@ button {
   .about-section .about-container .about-content .block1 .col-left,
 .about-section .about-container .about-content .block1 .col-right {
     width: 100%;
+  }
+}
+@media (max-width: 767.2px) {
+  .about-section .about-container .about-content .block1 .col-left,
+.about-section .about-container .about-content .block1 .col-right {
+    padding: 0;
   }
 }
 
