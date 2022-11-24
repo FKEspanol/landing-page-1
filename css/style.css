@@ -400,15 +400,28 @@ button {
 .services-section .services-container .card-grid-area .card-item {
   border: #cacaca 1px solid;
 }
-.services-section .services-container .card-grid-area .card-item img {
+.services-section .services-container .card-grid-area .card-item .card-image {
+  overflow: hidden;
+}
+.services-section .services-container .card-grid-area .card-item .card-image img {
   width: 100%;
+  transition: 250ms ease-in;
+}
+.services-section .services-container .card-grid-area .card-item .card-image img:hover {
+  transform: scale(1.1);
 }
 .services-section .services-container .card-grid-area .card-item .card-content {
   padding: 2rem;
   line-height: 1.5;
+  transition: 250ms ease-in-out;
 }
 .services-section .services-container .card-grid-area .card-item .card-content h4 {
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   margin-bottom: 0.5rem;
   color: #274180;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+.services-section .services-container .card-grid-area .card-item .card-content:hover h4 {
+  color: #3355a7;
 }/*# sourceMappingURL=style.css.map */

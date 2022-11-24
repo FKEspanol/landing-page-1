@@ -57,18 +57,35 @@
 
       .card-item {
         border: $light-gray 1px solid;
-        img {
-          width: 100%;
+
+        .card-image {
+          overflow: hidden;
+          img {
+            width: 100%;
+            transition: 250ms ease-in;
+
+            &:hover {
+              transform: scale(1.1);
+            }
+          }
         }
 
         .card-content {
           padding: 2rem;
           line-height: 1.5;
-
+          transition: 250ms ease-in-out;
           h4 {
-            font-size: 1.3rem;
+            font-size: 1.1rem;
             margin-bottom: 0.5rem;
             color: $primary-color;
+            text-transform: uppercase;
+            font-weight: weight(x-bold);
+          }
+
+          &:hover {
+            h4 {
+              color: lighten($primary-color, 10);
+            }
           }
         }
       }
