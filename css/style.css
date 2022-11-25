@@ -422,6 +422,9 @@ button {
   text-transform: uppercase;
   font-weight: 900;
 }
+.services-section .services-container .card-grid-area .card-item .card-content p {
+  color: #525252;
+}
 .services-section .services-container .card-grid-area .card-item .card-content:hover h4 {
   color: #3355a7;
 }/*# sourceMappingURL=style.css.map */
