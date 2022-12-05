@@ -57,9 +57,11 @@
 
       .card-item {
         border: $light-gray 1px solid;
+        border-radius: 0.5rem;
 
         .card-image {
           overflow: hidden;
+          border-radius: 0.5rem 0.5rem 0 0;
           img {
             width: 100%;
             transition: 250ms ease-in;

@@ -399,9 +399,11 @@ button {
 }
 .services-section .services-container .card-grid-area .card-item {
   border: #cacaca 1px solid;
+  border-radius: 0.5rem;
 }
 .services-section .services-container .card-grid-area .card-item .card-image {
   overflow: hidden;
+  border-radius: 0.5rem 0.5rem 0 0;
 }
 .services-section .services-container .card-grid-area .card-item .card-image img {
   width: 100%;
