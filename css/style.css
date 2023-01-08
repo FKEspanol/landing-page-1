@@ -55,6 +55,14 @@ p {
   font-size: 0.9rem;
 }
 
+img {
+  width: 100%;
+}
+
+section {
+  padding: 60px 0px;
+}
+
 button {
   cursor: pointer;
 }
@@ -237,9 +245,6 @@ button {
   }
 }
 
-.about-section {
-  padding: 60px 0px 0px 0px;
-}
 .about-section .about-container .about-content .block1 {
   display: flex;
   justify-content: space-evenly;
@@ -344,9 +349,6 @@ button {
   }
 }
 
-.services-section {
-  padding: 60px 0px 0px 0px;
-}
 .services-section .services-container .block1-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -429,4 +431,31 @@ button {
 }
 .services-section .services-container .card-grid-area .card-item .card-content:hover h4 {
   color: #3355a7;
+}
+
+.team-section .team-container .team-card-section {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+@media (max-width: 991.2px) {
+  .team-section .team-container .team-card-section {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 767.2px) {
+  .team-section .team-container .team-card-section {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.team-section .team-container .team-card-section .member-profile-card {
+  text-align: center;
+  line-height: 1.7;
+}
+.team-section .team-container .team-card-section .member-profile-card .soc-med-contacts {
+  letter-spacing: 0.4rem;
+}
+.team-section .team-container .team-card-section .member-profile-card .soc-med-contacts i {
+  color: #274180;
+  font-size: 1.1rem;
 }/*# sourceMappingURL=style.css.map */
