@@ -5,9 +5,10 @@
 @use "../abstracts/abstr_index" as *;
 
 .header {
-  background-color: transparent;
-  position: absolute;
+  position: fixed;
+  background-color: $dark-color;
   width: 100%;
+  z-index: 1;
   #{&}-container {
     @include flex-between-center;
     padding: 1.5rem 0.75rem;

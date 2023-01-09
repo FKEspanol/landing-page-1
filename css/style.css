@@ -64,8 +64,26 @@ section {
   background-color: #f3f3f3;
 }
 
-button {
+h2 {
+  font-size: 2.7rem !important;
+}
+
+h3 {
+  font-size: 2rem !important;
+}
+
+button,
+.bttn {
   cursor: pointer;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 1rem 2rem;
+  background: linear-gradient(to right, #274180, #416fdb);
+  border: none;
+  color: #fff;
+  border-radius: 2rem;
+  text-decoration: none;
 }
 
 .section-header {
@@ -78,13 +96,14 @@ button {
 }
 .section-header h2 {
   color: #274180;
-  font-size: 2rem;
+  font-size: 2.7rem;
 }
 
 .header {
-  background-color: transparent;
-  position: absolute;
+  position: fixed;
+  background-color: #343434;
   width: 100%;
+  z-index: 1;
 }
 .header .header-container {
   display: flex;
@@ -121,10 +140,7 @@ button {
 .hero-section {
   width: 100%;
   height: 100vh;
-  background: linear-gradient(to right, rgba(39, 70, 133, 0.8) 0%, rgba(61, 179, 197, 0.8) 100%), url(../assets/hero-bg.jpg) no-repeat center;
-  background-size: cover;
-  background-position: center center;
-  background-size: cover;
+  background: #343434;
 }
 .hero-section .hero-container {
   display: flex;
@@ -203,7 +219,6 @@ button {
   margin-bottom: 1rem;
 }
 .second-hero .second-hero-container .col-left h3 {
-  font-size: 1.8rem;
   margin-bottom: 20px;
   color: #274180;
 }
@@ -214,14 +229,7 @@ button {
   margin-bottom: 20px;
 }
 .second-hero .second-hero-container .col-left button {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  padding: 1rem 2rem;
   background: linear-gradient(to right, #274180, #416fdb);
-  border: none;
-  color: #fff;
-  border-radius: 2rem;
 }
 .second-hero .second-hero-container .col-right {
   width: 40%;
@@ -466,7 +474,9 @@ button {
 }
 
 .contact-section {
-  height: 100vh;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   position: relative;
   background-color: rgba(52, 52, 52, 0.6235294118);
 }
@@ -480,4 +490,57 @@ button {
   background: url("../../assets/city-1.jpg") no-repeat;
   background-size: cover;
   background-position: center;
+}
+.contact-section .contact-container .section-header {
+  margin-bottom: 7rem;
+}
+.contact-section .contact-container .section-header h2,
+.contact-section .contact-container .section-header p {
+  color: #fff;
+}
+.contact-section .contact-container .section-header p {
+  margin-bottom: 1.5rem;
+  width: 60%;
+  margin: auto;
+}
+.contact-section .contact-container .section-header .btn-area a:nth-child(1) {
+  margin-right: 1rem;
+}
+.contact-section .contact-container .content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+@media (max-width: 767.2px) {
+  .contact-section .contact-container .content {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.contact-section .contact-container .content .contact-info {
+  background-color: rgba(52, 52, 52, 0.6784313725);
+  padding: 3rem;
+}
+.contact-section .contact-container .content .contact-info h3,
+.contact-section .contact-container .content .contact-info p {
+  color: #fff;
+}
+.contact-section .contact-container .content .contact-info .soc-med-icons i.fab {
+  font-size: 1.2rem;
+  text-align: center;
+  color: #343434;
+  padding: 0.8rem;
+  border-radius: 50%;
+  background-color: #fff;
+  margin-right: 0.5rem;
+}
+.contact-section .contact-container .content .contact-form form {
+  background-color: #fff;
+  padding: 2.5rem 4rem;
+  border-radius: 3rem;
+}
+.contact-section .contact-container .content .contact-form form .section-header {
+  margin-bottom: 2rem;
+}
+.contact-section .contact-container .content .contact-form form input {
+  margin-bottom: 2rem;
 }/*# sourceMappingURL=style.css.map */

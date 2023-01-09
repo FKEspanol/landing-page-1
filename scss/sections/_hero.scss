@@ -2,15 +2,7 @@
 .hero-section {
   width: 100%;
   height: 100vh;
-  background: linear-gradient(
-      to right,
-      rgba(39, 70, 133, 0.8) 0%,
-      rgba(61, 179, 197, 0.8) 100%
-    ),
-    url(../assets/hero-bg.jpg) no-repeat center;
-  background-size: cover;
-  background-position: center center;
-  background-size: cover;
+  background: $dark-color;
 
   .hero-container {
     @include flex-align-center;
@@ -97,7 +89,6 @@
       margin-bottom: 1rem;
 
       h3 {
-        font-size: 1.8rem;
         margin-bottom: 20px;
         color: $primary-color;
       }
@@ -110,12 +101,7 @@
       }
 
       button {
-        width: fit-content;
-        padding: 1rem 2rem;
         background: linear-gradient(to right, #274180, #416fdb);
-        border: none;
-        color: #fff;
-        border-radius: 2rem;
       }
     }
     .col-right {
