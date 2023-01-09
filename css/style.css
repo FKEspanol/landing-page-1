@@ -61,6 +61,7 @@ img {
 
 section {
   padding: 60px 0px;
+  background-color: #f3f3f3;
 }
 
 button {
@@ -187,6 +188,7 @@ button {
 
 .second-hero {
   padding: 60px 0px 0px 0px;
+  background-color: #f3f3f3;
 }
 .second-hero .second-hero-container {
   display: flex;
@@ -433,6 +435,9 @@ button {
   color: #3355a7;
 }
 
+.team-section {
+  background-color: #f7f9fc;
+}
 .team-section .team-container .team-card-section {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -458,4 +463,21 @@ button {
 .team-section .team-container .team-card-section .member-profile-card .soc-med-contacts i {
   color: #274180;
   font-size: 1.1rem;
+}
+
+.contact-section {
+  height: 100vh;
+  position: relative;
+  background-color: rgba(52, 52, 52, 0.6235294118);
+}
+.contact-section .contact-bg {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  background: url("../../assets/city-1.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
 }/*# sourceMappingURL=style.css.map */

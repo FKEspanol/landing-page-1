@@ -1,0 +1,19 @@
+@use "../abstracts/abstr_index" as *;
+
+.contact-section {
+  height: 100vh;
+  position: relative;
+  background-color: #3434349f;
+
+  .contact-bg {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    background: url("../../assets/city-1.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}

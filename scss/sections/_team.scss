@@ -1,6 +1,7 @@
 @use "../abstracts/abstr_index" as *;
 
 .team-section {
+  background-color: #f7f9fc;
   .team-container {
     .team-card-section {
       display: grid;
