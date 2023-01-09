@@ -12,7 +12,7 @@
     bottom: 0;
     left: 0;
     z-index: -1;
-    background: url("/assets/city-1.jpg") no-repeat;
+    background: url("../assets/city-1.jpg") no-repeat;
     background-size: cover;
     background-position: center;
   }
@@ -31,7 +31,7 @@
         margin: auto;
       }
 
-      .btn-area a:nth-child(1) {
+      .btn-area > a:nth-child(1) {
         margin-right: 1rem;
       }
     }
