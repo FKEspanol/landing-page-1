@@ -17,25 +17,15 @@
         .text-area-container {
           h1.hero-header {
             font-size: 3.5rem;
-            margin-bottom: 1.9rem;
+            margin-bottom: 1rem;
           }
 
           p {
             font-size: 1.2rem;
-            margin-bottom: 3rem;
+            margin-bottom: 1rem;
           }
 
           button {
-            border: 2px #fff solid;
-            border-radius: 2rem;
-            font-size: 1rem;
-            background-color: transparent;
-            color: #fff;
-            padding: 1rem 2rem;
-            margin-bottom: 1rem;
-            transition: 200ms ease-in-out;
-            cursor: pointer;
-
             &:hover {
               background-color: #fff;
               color: $primary-color;
@@ -98,10 +88,6 @@
         color: $info-color;
         line-height: 1.7;
         margin-bottom: 20px;
-      }
-
-      button {
-        background: linear-gradient(to right, #274180, #416fdb);
       }
     }
     .col-right {

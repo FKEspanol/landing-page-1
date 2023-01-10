@@ -1,3 +1,4 @@
+@use "../abstracts/abstr_index" as *;
 section {
   padding: 60px 0px;
   background-color: #f3f3f3;
@@ -9,4 +10,32 @@ h2 {
 
 h3 {
   font-size: 2rem !important;
+}
+
+h4 {
+  font-size: 1.6rem !important;
+}
+
+.primary {
+  color: $primary-color !important;
+}
+
+.secondary {
+  color: $secondary-color;
+}
+
+.dark {
+  color: $dark-color;
+}
+
+.danger {
+  color: $danger-color;
+}
+
+.success {
+  color: $success-color;
+}
+
+.warning {
+  color: $warning-color;
 }

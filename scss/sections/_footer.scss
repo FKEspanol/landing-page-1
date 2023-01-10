@@ -1,0 +1,23 @@
+@use "../abstracts/abstr_index" as *;
+
+footer {
+  background-color: $dark-color;
+  padding: 2rem 0;
+  text-align: center;
+
+  .container {
+    p {
+      color: #fff;
+    }
+
+    div {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 0.5rem;
+
+      p:nth-child(1) {
+        margin-right: 0.5rem;
+      }
+    }
+  }
+}

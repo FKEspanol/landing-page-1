@@ -1,11 +1,6 @@
-button,
-.bttn {
-  cursor: pointer;
+button {
+  color: #fff !important;
+  background: linear-gradient(to right, #00a088, #416fdb);
   width: fit-content;
-  padding: 1rem 2rem;
-  background: linear-gradient(to right, #274180, #416fdb);
-  border: none;
-  color: #fff;
-  border-radius: 2rem;
-  text-decoration: none;
+  border: none !important;
 }

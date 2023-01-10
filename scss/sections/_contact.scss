@@ -31,7 +31,7 @@
         margin: auto;
       }
 
-      .btn-area > a:nth-child(1) {
+      .btn-area > button:nth-child(1) {
         margin-right: 1rem;
       }
     }
@@ -45,7 +45,6 @@
       }
 
       .contact-info {
-        background-color: #343434ad;
         padding: 3rem;
         h3,
         p {
@@ -58,22 +57,34 @@
           i.fab {
             font-size: 1.2rem;
             text-align: center;
-            color: $dark-color;
+            color: #fff;
             padding: 0.8rem;
             border-radius: 50%;
             background-color: #fff;
             margin-right: 0.5rem;
+          }
+
+          i:nth-child(1) {
+            background-color: #4267b2;
+          }
+          i:nth-child(2) {
+            background: linear-gradient(to top right, #fcaf45, #c13584);
+          }
+          i:nth-child(3) {
+            background-color: #1da1f2;
+          }
+          i:nth-child(4) {
+            background-color: #0077b5;
           }
         }
       }
 
       .contact-form {
         background-color: #fff;
-        text-align: center;
-        padding: 2.5rem 4rem;
-        border-radius: 3rem;
-        h3 {
-          margin-bottom: 3.5rem;
+        padding: 2.5rem;
+        border-radius: 0.5rem;
+        h4 {
+          margin-bottom: 2.5rem;
         }
         form {
           input {

@@ -16,6 +16,12 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/bulma.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cabin+Sketch&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/style.css" />
     <!-- <link
       rel="stylesheet"
@@ -30,26 +36,32 @@
   <body>
     <header id="header" class="header">
       <div class="header-container container">
-        <p class="brandname">
-          <a href="#">BrandName</a>
-        </p>
-        <ul class="nav-area">
-          <li class="nav-link">
-            <a href="#">Home</a>
-          </li>
-          <li class="nav-link">
-            <a href="#about">About</a>
-          </li>
-          <li class="nav-link">
-            <a href="#services">Services</a>
-          </li>
-          <li class="nav-link">
-            <a href="#team">Team</a>
-          </li>
-          <li class="nav-link">
-            <a href="#contact">Contact</a>
-          </li>
-        </ul>
+        <div class="nav-area">
+          <p class="brandname">
+            <a href="#">BrandName</a>
+          </p>
+          <ul class="nav-area">
+            <li class="nav-link">
+              <a href="#">Home</a>
+            </li>
+            <li class="nav-link">
+              <a href="#about">About</a>
+            </li>
+            <li class="nav-link">
+              <a href="#services">Services</a>
+            </li>
+            <li class="nav-link">
+              <a href="#team">Team</a>
+            </li>
+            <li class="nav-link">
+              <a href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="nav-right-side">
+          <p>Log In</p>
+          <button class="button is-medium">Start for Free</button>
+        </div>
       </div>
     </header>
 
@@ -64,7 +76,7 @@
                   Efficiently actualize installed base functionalities without
                   diverse deliverables.
                 </p>
-                <button>Get Started</button>
+                <button class="button is-medium">Get Started</button>
               </div>
             </div>
             <div class="hero-image-area">
@@ -84,7 +96,7 @@
               testing procedures via B2B vortals. Efficiently
               visualize.Efficiently actualize.
             </p>
-            <button>Download Now</button>
+            <button class="button is-medium">Download Now</button>
           </div>
           <div class="col-right">
             <img src="assets/undraw_svg_2.svg" alt="an image here" />
@@ -176,7 +188,7 @@
           </div>
           <div class="block1-grid">
             <div class="grid-col">
-              <i class="fa-solid fa-cart-flatbed"></i>
+              <i class="fa-solid fa-cart-flatbed primary"></i>
               <div class="content">
                 <h4>Lorem ipsum</h4>
                 <p>
@@ -188,7 +200,7 @@
               </div>
             </div>
             <div class="grid-col">
-              <i class="fa-solid fa-truck"></i>
+              <i class="fa-solid fa-truck secondary"></i>
               <div class="content">
                 <h4>Lorem ipsum</h4>
                 <p>
@@ -200,7 +212,7 @@
               </div>
             </div>
             <div class="grid-col">
-              <i class="fa-solid fa-truck-ramp-box"></i>
+              <i class="fa-solid fa-truck-ramp-box danger"></i>
               <div class="content">
                 <h4>Lorem ipsum</h4>
                 <p>
@@ -212,7 +224,7 @@
               </div>
             </div>
             <div class="grid-col">
-              <i class="fa-solid fa-truck"></i>
+              <i class="fa-solid fa-truck warning"></i>
               <div class="content">
                 <h4>Lorem ipsum</h4>
                 <p>
@@ -224,9 +236,9 @@
               </div>
             </div>
             <div class="grid-col">
-              <i class="fa-solid fa-cart-flatbed"></i>
+              <i class="fa-solid fa-cart-flatbed success"></i>
               <div class="content">
-                <h4>Dolor sit amet</h4>
+                <h4 class="is-success">Dolor sit amet</h4>
                 <p>
                   Appropriately negotiate real-time content vis-a-vis accurate
                   growth strategies. Objectively revolutionize business action
@@ -236,7 +248,7 @@
               </div>
             </div>
             <div class="grid-col">
-              <i class="fa-solid fa-truck-ramp-box"></i>
+              <i class="fa-solid fa-truck-ramp-box dark"></i>
               <div class="content">
                 <h4>Consectetur</h4>
                 <p>
@@ -414,6 +426,8 @@
         </div>
       </section>
 
+      <!--------------------Contact Section----------------------->
+
       <section id="contact" class="contact-section">
         <div class="contact-bg"></div>
         <div class="contact-container container">
@@ -426,16 +440,17 @@
             </p>
             <br />
             <div class="btn-area">
-              <a href="#" class="bttn">Start Now</a>
-              <a href="#" class="bttn">Subscribe</a>
+              <button class="button is-medium">Start Now</a>
+              <button class="button is-medium">Subscribe</a>
             </div>
           </div>
           <div class="content">
             <div class="contact-info">
               <h3>Contact Us</h3>
-              <p>Duterte Street</p>
+              <p>Bldg Times Square, Duterte Street</p>
               <p>Davao City, Philippines, 8000</p>
-              <p>brandname@gmail.com</p>
+              <hr>
+              <p>Email: brandname@gmail.com</p>
               <p>Globe: 09123456789 | Smart: 09123456789</p>
               <br />
               <div class="soc-med-icons">
@@ -446,8 +461,9 @@
               </div>
             </div>
             <div class="contact-form">
-              <h3>Subscribe To Our News Letter</h3>
-              <form>
+              <h4>Connect with us</h4>
+              <form class="">
+                <label for="name">Name</label>
                 <input
                   type="text"
                   name="name"
@@ -456,6 +472,7 @@
                   class="input is-normal"
                 />
                 <br />
+                <label for="email">Email</label>
                 <input
                   type="email"
                   name="email"
@@ -464,6 +481,7 @@
                   class="input is-normal"
                 />
                 <br />
+                <label for="company-name">Company Name</label>
                 <input
                   type="text"
                   name="company-name"
@@ -472,12 +490,21 @@
                   class="input is-normal"
                 />
                 <br />
-                <button>Subscribe</button>
+                <button class="button is-medium">Subscribe</button>
               </form>
             </div>
           </div>
         </div>
       </section>
+      <footer>
+        <div class="container">
+          <div>
+            <p>Privacy Policy</p>
+            <p>Terms of Service</p>
+          </div>
+          <p>&copy; 2023 BrandName Co., Ltd. All Rights Reserve</p>
+        </div>
+      </footer>
     </main>
 
     <script src="js/main.js"></script>
