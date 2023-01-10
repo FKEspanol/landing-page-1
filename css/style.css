@@ -115,6 +115,7 @@ h4 {
   width: -moz-fit-content;
   width: fit-content;
   border: none !important;
+  font-weight: 700;
 }
 
 .section-header {
