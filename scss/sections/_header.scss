@@ -5,9 +5,9 @@
   background-color: $dark-color;
   width: 100%;
   z-index: 1;
-  #{&}-container {
+  transition: 200ms ease-in;
+  .header-container {
     @include flex-between-center;
-    padding: 1.5rem 0.75rem;
     position: relative;
     .nav-area {
       @include flex-start-center;

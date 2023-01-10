@@ -1,3 +1,11 @@
+.header-on-scroll {
+  padding: 1rem 0.75rem;
+}
+
+.header-on-top {
+  padding: 2.5rem 0.75rem;
+}
+
 .container {
   width: 1320px;
   margin: auto;
@@ -100,7 +108,7 @@ h4 {
   color: #f2b969;
 }
 
-button {
+.my-btn {
   color: #fff !important;
   background: linear-gradient(to right, #00a088, #416fdb);
   width: -webkit-fit-content;
@@ -119,6 +127,7 @@ button {
 }
 .section-header h2 {
   font-size: 2rem;
+  font-weight: 700;
 }
 
 .header {
@@ -126,12 +135,12 @@ button {
   background-color: #343434;
   width: 100%;
   z-index: 1;
+  transition: 200ms ease-in;
 }
 .header .header-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.5rem 0.75rem;
   position: relative;
 }
 .header .header-container .nav-area {
@@ -197,11 +206,13 @@ button {
 }
 .hero-section .hero-container .hero-text-image .hero-text-area .text-area-container h1.hero-header {
   font-size: 3.5rem;
+  font-weight: 900;
   margin-bottom: 1rem;
 }
 .hero-section .hero-container .hero-text-image .hero-text-area .text-area-container p {
-  font-size: 1.2rem;
-  margin-bottom: 1rem;
+  width: 60%;
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
 }
 .hero-section .hero-container .hero-text-image .hero-text-area .text-area-container button:hover {
   background-color: #fff;
@@ -501,7 +512,7 @@ button {
   height: -moz-fit-content;
   height: fit-content;
   position: relative;
-  background-color: rgba(52, 52, 52, 0.6235294118);
+  background-color: rgba(52, 52, 52, 0.7529411765);
 }
 .contact-section .contact-bg {
   position: fixed;
@@ -542,6 +553,9 @@ button {
 .contact-section .contact-container .content .contact-info h3,
 .contact-section .contact-container .content .contact-info p {
   color: #fff;
+}
+.contact-section .contact-container .content .contact-info hr {
+  background: #00d1b2;
 }
 .contact-section .contact-container .content .contact-info .btn-area > button:nth-child(1) {
   margin-right: 1rem;

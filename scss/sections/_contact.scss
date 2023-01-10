@@ -3,7 +3,7 @@
 .contact-section {
   height: fit-content;
   position: relative;
-  background-color: #3434349f;
+  background-color: #343434c0;
 
   .contact-bg {
     position: fixed;
@@ -47,6 +47,10 @@
           color: #fff;
           // margin-left: auto;
           // margin-right: auto;
+        }
+
+        hr {
+          background: $secondary-color;
         }
 
         .btn-area > button:nth-child(1) {
