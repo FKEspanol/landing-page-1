@@ -526,9 +526,6 @@ button {
   width: 60%;
   margin: auto;
 }
-.contact-section .contact-container .section-header .btn-area > button:nth-child(1) {
-  margin-right: 1rem;
-}
 .contact-section .contact-container .content {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -545,6 +542,9 @@ button {
 .contact-section .contact-container .content .contact-info h3,
 .contact-section .contact-container .content .contact-info p {
   color: #fff;
+}
+.contact-section .contact-container .content .contact-info .btn-area > button:nth-child(1) {
+  margin-right: 1rem;
 }
 .contact-section .contact-container .content .contact-info .soc-med-icons i.fab {
   font-size: 1.2rem;
@@ -577,6 +577,16 @@ button {
 }
 .contact-section .contact-container .content .contact-form form input {
   margin-bottom: 2rem;
+}
+.contact-section .contact-container .content .contact-form form p {
+  font-size: 1rem;
+  text-align: center;
+}
+.contact-section .contact-container .content .contact-form form button {
+  width: 100%;
+}
+.contact-section .contact-container .content .contact-form form button#submitBtn {
+  margin-bottom: 0.7rem;
 }
 
 footer {
