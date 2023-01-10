@@ -605,7 +605,7 @@ h4 {
 }
 
 footer {
-  background-color: #343434;
+  background-color: rgba(52, 52, 52, 0.9176470588);
   padding: 2rem 0;
   text-align: center;
 }
