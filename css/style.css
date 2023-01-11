@@ -45,6 +45,7 @@
 html {
   font-size: 100%;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 *,
@@ -116,11 +117,14 @@ h4 {
   width: fit-content;
   border: none !important;
   font-weight: 700;
+  font-size: 1rem !important;
+  text-transform: uppercase;
 }
 
 .section-header {
   text-align: center;
   line-height: 1.8;
+  margin-top: 2rem;
   margin-bottom: 2rem;
 }
 .section-header p {
@@ -184,6 +188,9 @@ h4 {
   margin-right: 1rem;
   color: #fff;
 }
+.header .header-container .nav-right-side button {
+  font-size: 1rem;
+}
 
 .hero-section {
   width: 100%;
@@ -200,7 +207,7 @@ h4 {
   display: flex;
 }
 .hero-section .hero-container .hero-text-image .hero-text-area {
-  width: 60%;
+  width: 50%;
   color: #fff;
   display: flex;
   align-items: center;
@@ -220,7 +227,7 @@ h4 {
   color: #209cee;
 }
 .hero-section .hero-container .hero-text-image .hero-image-area {
-  width: 40%;
+  width: 50%;
   margin: auto;
 }
 .hero-section .hero-container .hero-text-image .hero-image-area img {
@@ -401,8 +408,8 @@ h4 {
 .services-section .services-container .block1-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  -moz-column-gap: 1rem;
-       column-gap: 1rem;
+  -moz-column-gap: 3rem;
+       column-gap: 3rem;
   margin-bottom: 60px;
 }
 @media (max-width: 767.2px) {
@@ -446,7 +453,7 @@ h4 {
   }
 }
 .services-section .services-container .card-grid-area .card-item {
-  border: #cacaca 1px solid;
+  border: #dfdfdf 1px solid;
   border-radius: 0.5rem;
 }
 .services-section .services-container .card-grid-area .card-item .card-image {
@@ -517,10 +524,11 @@ h4 {
 }
 .contact-section .contact-bg {
   position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
+  width: 100%;
   left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
   z-index: -1;
   background: url("../assets/city-1.jpg") no-repeat;
   background-size: cover;

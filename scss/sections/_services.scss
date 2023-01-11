@@ -5,7 +5,7 @@
     .block1-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      column-gap: 1rem;
+      column-gap: 3rem;
       margin-bottom: 60px;
 
       @include small-screen {

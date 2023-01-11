@@ -11,7 +11,7 @@
     .hero-text-image {
       display: flex;
       .hero-text-area {
-        width: 60%;
+        width: 50%;
         color: #fff;
         @include flex-align-center;
         .text-area-container {
@@ -37,7 +37,7 @@
       }
 
       .hero-image-area {
-        width: 40%;
+        width: 50%;
         margin: auto;
 
         img {
