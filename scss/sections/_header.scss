@@ -2,14 +2,15 @@
 
 .header {
   position: fixed;
-  background-color: $dark-color;
+  // background-color: $dark-color;
   width: 100%;
   z-index: 1;
   transition: 200ms ease-in;
+
   .header-container {
     @include flex-between-center;
     position: relative;
-    .nav-area {
+    .nav-area-container {
       @include flex-start-center;
       p.brandname > a {
         font-family: "Cabin Sketch", cursive;
@@ -33,22 +34,56 @@
           }
         }
 
-        @include small-screen {
+        @include medium-screen {
           display: none;
         }
       }
     }
 
     .nav-right-side {
-      @include flex-between-center;
+      .nav-area {
+        @include flex-between-center;
 
-      p {
-        margin-right: 1rem;
-        color: #fff;
+        p {
+          margin-right: 1rem;
+          color: #fff;
+        }
+
+        button {
+          font-size: 1rem;
+        }
+
+        @include medium-screen {
+          display: none;
+        }
       }
 
-      button {
-        font-size: 1rem;
+      #show-menu-btn > i.fa-solid {
+        display: none;
+        color: #fff;
+        font-size: 1.5rem;
+        @include medium-screen {
+          display: block;
+        }
+      }
+    }
+  }
+
+  #drop-down-menu {
+    height: 0px;
+    display: none;
+    transition: 500ms ease-in-out;
+    .container {
+      a {
+        display: block;
+        color: #fff;
+        text-decoration: none;
+        width: 100%;
+        padding: 0.7rem 0rem;
+        transition: 200ms ease-in-out;
+        &:hover {
+          background-color: lighten($dark-color, $amount: 8);
+        }
       }
     }
   }

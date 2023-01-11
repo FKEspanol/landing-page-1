@@ -1,7 +1,12 @@
+@use "../abstracts/abstr_index" as *;
 .header-on-scroll {
   padding: 1rem 0.75rem;
 }
 
 .header-on-top {
   padding: 2.5rem 0.75rem;
+}
+
+.show-header-bg {
+  background-color: $dark-color;
 }
