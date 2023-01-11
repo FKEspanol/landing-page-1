@@ -12,6 +12,10 @@
         display: block;
       }
 
+      @include medium-screen {
+        column-gap: 1rem;
+      }
+
       .grid-col {
         margin-top: 1rem;
         padding: 2rem 0;
