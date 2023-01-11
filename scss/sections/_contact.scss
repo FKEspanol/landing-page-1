@@ -2,21 +2,20 @@
 
 .contact-section {
   height: fit-content;
-  position: relative;
   background-color: $dark-overlay;
 
-  .contact-bg {
-    position: fixed;
-    width: 100%;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    z-index: -2;
-    background: url("../assets/city-1.jpg") no-repeat;
-    background-size: cover;
-    background-position: center;
-  }
+  // .contact-bg {
+  //   position: fixed;
+  //   width: 100%;
+  //   left: 0;
+  //   right: 0;
+  //   top: 0;
+  //   bottom: 0;
+  //   z-index: -2;
+  //   background: url("../assets/city-1.jpg") no-repeat;
+  //   background-size: cover;
+  //   background-position: center;
+  // }
 
   .contact-container {
     .section-header {

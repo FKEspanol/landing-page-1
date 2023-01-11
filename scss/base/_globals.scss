@@ -1,4 +1,22 @@
 @use "../abstracts/abstr_index" as *;
+
+// body {
+//   position: relative;
+// }
+
+.fixed-bg {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: url("../assets/city-1.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: -2;
+}
+
 section {
   padding: 60px 0px;
   background-color: #f3f3f3;
