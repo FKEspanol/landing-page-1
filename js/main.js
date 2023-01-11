@@ -14,13 +14,26 @@ window.onscroll = (e) => {
 
 let menuIsClosed = true;
 menuBtn.addEventListener("click", (e) => {
-  if (menuIsClosed) {
+  const showMenu = () => {
     dropDownMenu.style.display = "block";
     dropDownMenu.style.height = "auto";
     menuIsClosed = false;
-  } else if (!menuIsClosed) {
+  };
+
+  const closeMenu = () => {
     dropDownMenu.style.display = "none";
     dropDownMenu.style.height = "0px";
     menuIsClosed = true;
+  };
+  if (menuIsClosed && scrollY > 100) {
+    showMenu();
+  } else if (!menuIsClosed && scrollY > 100) {
+    closeMenu();
+  } else if (menuIsClosed && scrollY < 100) {
+    showMenu();
+    header.classList.add("show-header-bg");
+  } else if (!menuIsClosed && scrollY < 100) {
+    closeMenu();
+    header.classList.remove("show-header-bg");
   }
 });

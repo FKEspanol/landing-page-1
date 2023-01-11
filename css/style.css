@@ -41,7 +41,7 @@
 }
 @media screen and (max-width: 575.2px) {
   .container {
-    padding: 1rem;
+    padding: 0 1rem;
     width: 100%;
     margin: auto;
   }
@@ -148,7 +148,7 @@ h4 {
   color: #525252;
 }
 .section-header h2 {
-  font-size: 2rem;
+  font-size: 2rem !important;
   font-weight: 700;
 }
 
@@ -176,6 +176,11 @@ h4 {
   color: #fff;
   text-decoration: none;
   margin-right: 5rem;
+}
+@media (max-width: 767.2px) {
+  .header .header-container .nav-area-container p.brandname > a {
+    font-size: 1.5rem;
+  }
 }
 .header .header-container .nav-area-container ul.nav-area {
   display: flex;
@@ -233,9 +238,9 @@ h4 {
   text-decoration: none;
   width: 100%;
   padding: 0.7rem 0rem;
-  transition: 200ms ease-in-out;
+  transition: 500ms ease-in-out;
 }
-.header #drop-down-menu .container a:hover {
+.header #drop-down-menu .container a:hover, .header #drop-down-menu .container a:active {
   background-color: #484848;
 }
 
@@ -261,8 +266,15 @@ h4 {
   font-weight: 900;
   margin-bottom: 1rem;
 }
+@media (max-width: 767.2px) {
+  .hero-section .hero-container .hero-text-area .text-area-container h1.hero-header {
+    font-size: 2.5rem;
+  }
+}
 .hero-section .hero-container .hero-text-area .text-area-container p {
+  width: 90%;
   font-size: 1rem;
+  margin: auto;
   margin-bottom: 2rem;
 }
 .hero-section .hero-container .hero-text-area .text-area-container button:hover {
@@ -551,7 +563,6 @@ h4 {
 }
 .contact-section .contact-container .section-header p {
   margin-bottom: 1.5rem;
-  width: 60%;
   margin: auto;
 }
 .contact-section .contact-container .content {
@@ -563,9 +574,6 @@ h4 {
   .contact-section .contact-container .content {
     grid-template-columns: repeat(1, 1fr);
   }
-}
-.contact-section .contact-container .content .contact-info {
-  padding: 3rem;
 }
 .contact-section .contact-container .content .contact-info h3,
 .contact-section .contact-container .content .contact-info p {
@@ -602,6 +610,11 @@ h4 {
   background-color: #fff;
   padding: 2.5rem;
   border-radius: 0.5rem;
+}
+@media (max-width: 991.2px) {
+  .contact-section .contact-container .content .contact-form {
+    padding: 1.5rem;
+  }
 }
 .contact-section .contact-container .content .contact-form h4 {
   margin-bottom: 2.5rem;
