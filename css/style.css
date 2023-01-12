@@ -149,7 +149,7 @@ h4 {
 }
 .section-header h2 {
   font-size: 2rem !important;
-  font-weight: 700;
+  font-weight: 900 !important;
 }
 
 .header {
@@ -591,7 +591,7 @@ h4 {
 .contact-section .contact-container .content .contact-info .btn-area > button:nth-child(1) {
   margin-right: 1rem;
 }
-.contact-section .contact-container .content .contact-info .soc-med-icons i.fab {
+.contact-section .contact-container .content .contact-info .soc-med-icons a > i.fab {
   font-size: 1.2rem;
   text-align: center;
   color: #fff;
@@ -600,16 +600,16 @@ h4 {
   background-color: #fff;
   margin-right: 0.5rem;
 }
-.contact-section .contact-container .content .contact-info .soc-med-icons i:nth-child(1) {
+.contact-section .contact-container .content .contact-info .soc-med-icons a:nth-child(1) > i {
   background-color: #4267b2;
 }
-.contact-section .contact-container .content .contact-info .soc-med-icons i:nth-child(2) {
+.contact-section .contact-container .content .contact-info .soc-med-icons a:nth-child(2) > i {
   background: linear-gradient(to top right, #fcaf45, #c13584);
 }
-.contact-section .contact-container .content .contact-info .soc-med-icons i:nth-child(3) {
+.contact-section .contact-container .content .contact-info .soc-med-icons a:nth-child(3) > i {
   background-color: #1da1f2;
 }
-.contact-section .contact-container .content .contact-info .soc-med-icons i:nth-child(4) {
+.contact-section .contact-container .content .contact-info .soc-med-icons a:nth-child(4) > i {
   background-color: #0077b5;
 }
 .contact-section .contact-container .content .contact-form {
