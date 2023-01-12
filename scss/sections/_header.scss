@@ -2,16 +2,17 @@
 
 .header {
   position: fixed;
-  // background-color: $dark-color;
   width: 100%;
   z-index: 1;
   transition: 200ms ease-in;
 
   .header-container {
-    @include flex-between-center;
     position: relative;
+    @include flex-between-center;
+
     .nav-area-container {
       @include flex-start-center;
+
       p.brandname > a {
         font-family: "Cabin Sketch", cursive;
         font-size: 2rem;
@@ -77,6 +78,7 @@
     height: 0px;
     display: none;
     transition: 500ms ease-in-out;
+
     .container {
       a {
         display: block;
@@ -85,6 +87,7 @@
         width: 100%;
         padding: 0.7rem 0rem;
         transition: 150ms ease-in-out;
+
         &:hover,
         &:active {
           background-color: lighten($dark-color, $amount: 8);

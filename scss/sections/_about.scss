@@ -2,22 +2,23 @@
 
 .about-section {
   background-color: #f7f9fc;
+
   .about-container {
     .about-content {
       .block1 {
         display: flex;
         justify-content: space-evenly;
         margin-bottom: 2rem;
+
         .col-left {
           width: 55%;
           display: flex;
           align-items: flex-end;
           padding-right: 1rem;
+
           img {
             width: 100%;
             height: auto;
-            //   position: absolute;
-            //   bottom: 0;
           }
         }
 
@@ -57,11 +58,13 @@
 
           ul {
             line-height: 1.4;
+
             li {
               @include flex-align-center;
               padding-bottom: 0.6rem;
               list-style: none;
               font-size: 0.95rem;
+
               p.list-para {
                 margin-bottom: 0;
                 text-align: start;
