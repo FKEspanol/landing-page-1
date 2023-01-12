@@ -4,6 +4,15 @@
   height: 100vh;
   background: #343434b0;
 
+  .hero-bg {
+    position: absolute;
+    inset: 0;
+    background: url("../assets/city-1.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+  }
+
   .hero-container {
     @include flex-align-center;
     height: 100%;
@@ -43,7 +52,7 @@
 
 .second-hero {
   padding: 60px 0px;
-  background-color: #f3f3f3;
+  background-color: #fff;
 
   .second-hero-container {
     @include flex-evenly;
@@ -66,6 +75,10 @@
         color: $info-color;
         line-height: 1.7;
         margin-bottom: 20px;
+      }
+
+      hr {
+        background-color: $secondary-color;
       }
     }
     .col-right {
